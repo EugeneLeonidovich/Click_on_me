@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:dots="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/previewmenu">
+
+        <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/rotateloading"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            app:loading_width="5dp"
+            app:loading_color="#fff"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/white"
+                    android:text="Loading"
+                    android:gravity="center"
+                    android:textSize="50sp" />
+
+                <com.eyalbira.loadingdots.LoadingDots
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    app:LoadingDots_auto_play="true"
+
+                    app:LoadingDots_dots_color="@android:color/white"
+                    app:LoadingDots_dots_count="3"
+                    app:LoadingDots_dots_size="5dp"
+                    app:LoadingDots_dots_space="1dp"
+
+                    app:LoadingDots_jump_duration="200"
+                    app:LoadingDots_jump_height="4dp"
+
+                    app:LoadingDots_loop_duration="800"
+                    app:LoadingDots_loop_start_delay="100">
+
+                </com.eyalbira.loadingdots.LoadingDots>
+
+        </LinearLayout>
+
+
+</LinearLayout>
